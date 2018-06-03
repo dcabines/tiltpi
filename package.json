@@ -5,6 +5,8 @@
   "author": "David Cabiness",
   "license": "ISC",
   "scripts": {
+    "build": "docker build -q -t tiltpi:dev .",
+    "install": "docker run -d -p 80:80 tiltpi:dev",
     "start": "node index.js"
   },
   "dependencies": {
