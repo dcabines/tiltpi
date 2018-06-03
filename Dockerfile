@@ -1,5 +1,4 @@
-FROM armhf/alpine
-RUN apk --update add nodejs
+FROM arm32v6/node:alpine
 
 WORKDIR /root/
 ADD ./package.json ./package.json
